@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="921px" height="221px" viewBox="0 0 921 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="85.9819402%" x2="50%" y2="12.7193357%" id="linearGradient-1">
+            <stop stop-color="#1989DB" offset="0%"></stop>
+            <stop stop-color="#36BEEF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.520241477" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Rectangle" fill="url(#linearGradient-1)" points="0 2.37691811e-14 921 0 921 221 0 221"></polygon>
+        <g id="Stars-Copy" transform="translate(0.000000, 41.000000)" fill="url(#linearGradient-2)">
+            <path d="M0,99 L188.5,99 C189.328427,99 190,99.6715729 190,100.5 C190,101.328427 189.328427,102 188.5,102 L0,102 L0,99 Z" id="Rectangle-Copy"></path>
+            <path d="M289,87 L477.5,87 C478.328427,87 479,87.6715729 479,88.5 C479,89.3284271 478.328427,90 477.5,90 L289,90 L289,87 Z" id="Rectangle-Copy-2"></path>
+            <path d="M478,0 L666.5,0 C667.328427,-1.52179594e-16 668,0.671572875 668,1.5 C668,2.32842712 667.328427,3 666.5,3 L478,3 L478,0 Z" id="Rectangle-Copy-3"></path>
+            <path d="M611,44 L799.5,44 C800.328427,44 801,44.6715729 801,45.5 C801,46.3284271 800.328427,47 799.5,47 L611,47 L611,44 Z" id="Rectangle-Copy-4"></path>
+            <path d="M575,118 L763.5,118 C764.328427,118 765,118.671573 765,119.5 C765,120.328427 764.328427,121 763.5,121 L575,121 L575,118 Z" id="Rectangle-Copy-5"></path>
+            <path d="M731,37 L919.5,37 C920.328427,37 921,37.6715729 921,38.5 C921,39.3284271 920.328427,40 919.5,40 L731,40 L731,37 Z" id="Rectangle-Copy-6"></path>
+            <path d="M179,127 L367.5,127 C368.328427,127 369,127.671573 369,128.5 C369,129.328427 368.328427,130 367.5,130 L179,130 L179,127 Z" id="Rectangle"></path>
+        </g>
+    </g>
+</svg>

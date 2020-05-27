@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    background: transparent;
+
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: #263745;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main-nav li a {
+    color: #263745;
+}
+
+.main-nav li a:hover {
+    color: #1472b7;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #263745;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+    width: 100%;
+}
+
+.main-head {
+    text-align: center;
+    margin: 30px 15px 0px 10px;
+    padding: 40px 0 60px;
+}
+
+.main-head h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+    font-size: 45px;
+    color: #263745;
+}
+
+.main-head img {
+    height: 24px;
+    width: auto;
+    display: inline-block;
+}
+
+.coupon-cards {}
+
+.coupon-cards-child {
+    background: white;
+    padding: 16px 20px;
+    color: #263745;
+    margin-bottom: 10px;
+}
+
+.coupon-cards-img {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.coupon-cards-img img {
+    width: 100%;
+    width: 100px;
+    align-items: center;
+    vertical-align: center;
+}
+
+.host-provider-name p {
+    font-size: 15.5px;
+}
+
+.discount {
+    /* width: 25%; */
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 900 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.action-block {
+    display: flex;
+    width: 25%;
+    font-size: 18px;
+    min-width: 260px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-block a {
+    text-decoration: none;
+}
+
+.button {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.button-code {
+    position: absolute;
+    background-color: #B43635;
+    color: white;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    width: 80% !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-overlay {
+    display: flex;
+    box-sizing: border-box;
+    width: 85%;
+    position: absolute;
+    transition: all .2s ease;
+}
+
+.button-title {
+    background-color: #E94D4C;
+    color: white;
+    padding: 11px 12px;
+    font-size: 16px;
+    border-radius: 3px 0 0 3px;
+    width: 70%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.button-overlay img {
+    margin-left: -1px;
+    height: 45px;
+}
+
+.button-overlay:hover {
+    transform: translateX(-35px);
+}
+
+.button-code.revealed {
+    display: none;
+    background-color: transparent;
+    border: 2px dashed #B43635;
+    box-sizing: border-box;
+    color: #333;
+    overflow: initial;
+    cursor: auto;
+    font-size: 16px !important;
+}
+
+.button-code {
+    position: absolute;
+    background-color: #B43635;
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.news-title {
+    background-color: white;
+    color: #263745;
+    padding: 2rem 2rem;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.news-card {
+    margin-top: 50px;
+}
+
+.news-card .col-sm-4 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 350px;
+}
+
+.news-card .col-sm-4:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0.4, 0.4, 0.4), 0 6px 20px 0 rgba(0.21, 0.21, 0.21, 0.21);
+}
+
+.news-card a {
+    text-decoration: none;
+}
+
+.news-card img {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+
+}
+
+.news-card h3 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.news-card-child {
+    width: 30%;
+}
+
+.about-webhosting {
+    margin-top: 100px;
+}
+
+.about-webhosting h3 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #263745;
+    font-weight: 700;
+}
+
+.about-webhosting p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.what-is-web-hostig {
+    /* margin-top: 100px; */
+}
+
+.what-is-web-hostig h3 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.what-is-web-hostig p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 16px 0;
+
+}
+
+.what-is-web-hostig p a {
+    text-decoration: underline;
+    color: #1989DB;
+}
+
+.footer {
+    background: #282D30;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    color: #B8BABB;
+}
+
+
+/* Responsive Navbar Code For Mobile & Tablet Starts From Here */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+/* Responsive Navbar Code For Mobile & Tablet Ends Here */
+
+/* Responsive Website Code For Mobile & Tablet Starts From Here */
+@media screen and (max-width: 768px) {
+    .main-head h1{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .main-head img {
+        height: 30px;
+        margin: 20px auto;
+    }
+
+    .coupon-cards-img {
+        width: 100% !important;
+    }
+
+    .coupon-cards-img img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .coupon-cards-child {
+        margin-bottom: 22px;
+    }
+
+    .discount {
+        margin-bottom: 10px;
+    }
+
+    .host-provider-name {
+        text-align: center;
+    }
+
+    .action-block {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .button-code {
+        width: 100% !important;
+    }
+
+    .button-overlay {
+        width: 100%;
+    }
+
+    .news-card h3 {
+        text-align: center;
+    }
+
+    .news-card .col-sm-4 {
+        margin-bottom: 22px;
+    }
+
+    .about-webhosting {
+        margin-top: 30px;
+        padding: 15px 30px;
+    }
+
+    #server-img img {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .what-is-web-hostig {
+        padding: 15px 30px;
+    }
+
+    .footer img {
+        margin: 20px 0;
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer p {
+        padding: 0 30px;
+        text-align: center;
+    }
+}
+/* Responsive Website Code For Mobile & Tablet Ends Here */
