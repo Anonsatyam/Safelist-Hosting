@@ -38,7 +38,7 @@ body {
 }
 
 .main-nav li a:hover {
-    color: #1472b7;
+    color: #ff715b;
     text-decoration: none;
 }
 
@@ -304,10 +304,33 @@ body {
     padding-top: 40px;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    font-size: 18px;
+    vertical-align: middle;
+    font-family: Helvetica !important;
+    color: white;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin: 5px 0;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Helvetica !important;
+
 }
 
 .footer p {
-    color: #B8BABB;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    letter-spacing: 2px;
 }
 
 
@@ -344,14 +367,16 @@ body {
         display: none;
     }
 }
+
 /* Responsive Navbar Code For Mobile & Tablet Ends Here */
 
 /* Responsive Website Code For Mobile & Tablet Starts From Here */
 @media screen and (max-width: 768px) {
-    .main-head h1{
+    .main-head h1 {
         font-size: 30px;
         font-weight: 900;
     }
+
     .main-head img {
         height: 30px;
         margin: 20px auto;
@@ -419,16 +444,35 @@ body {
         padding: 15px 30px;
     }
 
+    .container {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .col-xs-12 {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin-top: 0 !important; */
+    }
+
     .footer img {
         margin: 20px 0;
-        display: block !important;
         margin-left: auto;
         margin-right: auto;
     }
 
     .footer p {
-        padding: 0 30px;
-        text-align: center;
+        text-align: left;
+    }
+
+    .footer .col-sm-4 {
+        margin-bottom: 30px;
+    }
+
+    .panel {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
+
 /* Responsive Website Code For Mobile & Tablet Ends Here */

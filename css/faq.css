@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-container,
+#head-part {
+    background: #f9f9f9;
+}
+
+.navbar {
+    font-size: 18px;
+    background: transparent;
+    font-family: Helvetica;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: #263745;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main-nav li a {
+    color: #263745;
+}
+
+.main-nav li a:hover {
+    color: #ff715b;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #263745;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+    width: 100%;
+}
+.faq h2{
+    font-weight: bold;
+    font-family: Helvetica;
+    color: #263745;
+}
+
+.wrapper {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:992px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+.panel{
+    margin: 30px auto;
+}
+.panel-heading {
+    padding: 0 12px;
+    border: 0;
+    border: 1px solid #ff715b;
+    border-radius:5px;
+}
+.panel-body{
+    margin: 20px 30px;
+}
+
+.panel-title>a,
+.panel-title>a:active {
+    display: block;
+    padding: 15px;
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.panel-heading a:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\25bc";
+    float: right;
+    transition: all 0.5s;
+    color: #ff715b;
+}
+
+.panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.footer {
+    background: #282D30;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 18px;
+    vertical-align: middle;
+    font-family: Helvetica !important;
+    color: white;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin: 5px 0;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Helvetica !important;
+
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+/* Responsive Navbar Code For Mobile & Tablet Starts From Here */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/* Responsive Navbar Code For Mobile & Tablet Ends Here */
+
+/* Responsive Website Code For Mobile & Tablet Starts From Here */
+@media screen and (max-width: 768px) {
+    .container{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .col-xs-12 {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin-top: 0 !important; */
+      }
+    .footer img {
+        margin: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer p {
+        text-align: left;
+    }
+    .footer .col-sm-4{
+        margin-bottom: 30px;
+    }
+    .panel{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Responsive Website Code For Mobile & Tablet End Here */
