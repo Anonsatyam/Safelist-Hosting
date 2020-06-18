@@ -10,10 +10,10 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
 }
 
-#nav-container,
+/* #nav-container,
 #head-part {
     background: #f9f9f9;
-}
+} */
 
 .navbar {
     font-size: 18px;
@@ -98,7 +98,12 @@ body {
 }
 
 .panel-body {
-    margin: 20px 30px;
+    /* margin: 20px 30px; */
+    padding: 15px;
+    border: 1px solid #13aa52;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .panel-title>a,
@@ -208,11 +213,24 @@ body {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .details h1{
-        text-align: center;
+
+    .details h1 {
+        
+        font-size: 30px;
+        text-align: left;
     }
-    .details h3{
+
+    .details h3 {
         font-size: 22px;
+    }
+
+    .details .col-sm-8 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .details .col-sm-8 .content {
+        padding: 15px !important;
     }
 
     .container {
@@ -267,7 +285,8 @@ body {
     .scrolled #logo-sticky {
         display: inherit;
     }
-    #sticky{
+
+    #sticky {
         margin: 15px auto;
     }
 }
@@ -277,6 +296,16 @@ body {
 .details .col-sm-4 .fa:hover {
     background: #13aa52;
     color: white;
+}
+
+.details img:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.details h3 {
+    font-size: 24px;
+    margin-left: 15px;
 }
 
 #sticky:hover {
@@ -306,5 +335,3 @@ body {
 #nav-container.scrolled a {
     color: #fff;
 }
-
-

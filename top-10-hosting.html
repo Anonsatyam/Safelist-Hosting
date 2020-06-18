@@ -32,6 +32,47 @@
         .scrolled #logo-sticky {
             display: inherit;
         }
+
+        #button {
+            display: inline-block;
+            background-color: #4C4859;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s,
+                opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #button::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            /* line-height: 50px; */
+            color: #fff;
+        }
+
+        #button:hover {
+            cursor: pointer;
+            background-color: #13aa52;
+        }
+
+        #button:active {
+            background-color: #13aa52;
+        }
+
+        #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 
@@ -590,10 +631,14 @@
                             it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
                             can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Choice of cPanel of DirectAdmin for Server Settings</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Variable Support for PHP Versions 4.4 to 7.0</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> 1 Gbit Network Uplink Speeds on Data Transfer</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Schedule Secure Data Backups for Emergency</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Choice of cPanel of DirectAdmin for
+                                    Server Settings</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Variable Support for PHP Versions 4.4
+                                    to 7.0</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 1 Gbit Network Uplink Speeds on Data
+                                    Transfer</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Schedule Secure Data Backups for
+                                    Emergency</li>
                             </ul>
                         </p>
 
@@ -648,10 +693,13 @@
                                     it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
                                     can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Premium Hardware Optimized for Network Performance</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Use HostPapa's Proprietary Site Builder</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Premium Hardware Optimized for
+                                    Network Performance</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Use HostPapa's Proprietary Site
+                                    Builder</li>
                                 <li><i class="fa fa-check" aria-hidden="true"></i> Multi-Lingual Customer Support</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Server Firewall & Automated Intrusion Detection</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Server Firewall & Automated Intrusion
+                                    Detection</li>
                             </ul>
                         </p>
 
@@ -706,10 +754,14 @@
                                     it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
                                     can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Choose the International Max Speed Zone™</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Web Developer & Programming Support</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> SSD Storage Standard Across All Accounts</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> SSH Access, Secure IMAP Email, & WP-CLI</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Choose the International Max Speed
+                                    Zone™</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Web Developer & Programming Support
+                                </li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> SSD Storage Standard Across All
+                                    Accounts</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> SSH Access, Secure IMAP Email, &
+                                    WP-CLI</li>
                             </ul>
                         </p>
 
@@ -869,17 +921,22 @@
         </div>
     </div>
     <!-- Footer section code ends here. -->
-
+    <a id="button"></a>
     <!-- Bootstrap Script CND Links -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="jquery.firstVisitPopup.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <!-- My Custom Javascript File Link -->
     <script src="./Js/script.js"></script>
@@ -888,6 +945,25 @@
     <script>
         let date = new Date().toDateString();
         document.querySelector('.output').textContent = date;
+    </script>
+
+    <script type="text/javascript">
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
     </script>
 </body>
 

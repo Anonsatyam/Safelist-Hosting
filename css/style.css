@@ -670,6 +670,10 @@ button.snip0076.hover i {
     #myModal {
         display: none !important;
     }
+
+    #slideup {
+        display: none;
+    }
 }
 
 /* Responsive Website Code For Mobile & Tablet End Here */
@@ -864,12 +868,17 @@ button.snip0076.hover i {
 
 }
 
-#slideup:hover {
-    animation: none;
+button#slideup {
+    outline: none !important;
 }
 
-button#slideup {
-    border: none !important;
+/* button:focus{
+    outline: none !important;
+} */
+
+
+#slideup:hover {
+    animation: none;
 }
 
 #slide {
@@ -905,6 +914,29 @@ button#slideup {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background: url("../Images/New-Homepage/special-offer-sale-promotion-banner-template_18622-562.jpg");
+}
+
+.shut {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: -80px;
+    display: block;
+}
+
+.shut span {
+    font-size: 54px;
+}
+
+button.shut:hover {
+    border: none;
+    background: transparent !important;
+    background-color: transparent;
+}
+
+button.shut:focus {
+    outline: none;
 }
 
 .slide_text {

@@ -59,6 +59,48 @@
         .scrolled #logo-sticky {
             display: inherit;
         }
+
+
+        #button {
+            display: inline-block;
+            background-color: #4C4859;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s,
+                opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #button::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            /* line-height: 50px; */
+            color: #fff;
+        }
+
+        #button:hover {
+            cursor: pointer;
+            background-color: #13aa52;
+        }
+
+        #button:active {
+            background-color: #13aa52;
+        }
+
+        #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 
@@ -253,19 +295,43 @@
         </div>
     </div>
     <!-- Footer section code ends here. -->
-    <!-- Bootstrap Script CND Links -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <a id="button"></a>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="jquery.firstVisitPopup.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <!-- My Custom Javascript File Link -->
     <script src="./Js/script.js"></script>
+
+    <script type="text/javascript">
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '4000');
+        });
+    </script>
 
 </body>
 

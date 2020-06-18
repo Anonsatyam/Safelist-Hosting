@@ -57,11 +57,11 @@
 
         #button:hover {
             cursor: pointer;
-            background-color: #06d6a0;
+            background-color: #13aa52;
         }
 
         #button:active {
-            background-color: #06d6a0;
+            background-color: #13aa52;
         }
 
         #button.show {
@@ -378,7 +378,7 @@
 
                     </div>
                     <div class="col-sm-6 slide_text" id="slide_text">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" id="shut" class="shut" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <p>Are You Looking for a Best Deal?</p>
@@ -488,6 +488,10 @@
         $("#slideup").click(function () {
             $("#slide").slideToggle()("slow");
         });
+        $("#shut").click(function() {
+            $("#slide").slideToggle()("hide");
+        });
+
     </script>
 
     <script src="./Js/script.js"></script>

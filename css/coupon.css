@@ -161,6 +161,9 @@ body {
     overflow: hidden;
     font-size: 1.8rem;
 }
+.button a:hover{
+    text-decoration: none;
+}
 
 .button-code {
     position: absolute;
@@ -593,6 +596,7 @@ body {
 
 #nav-container.scrolled {
     background: #263745;
+    max-width: 100%;
 }
 
 #nav-container.scrolled a {
