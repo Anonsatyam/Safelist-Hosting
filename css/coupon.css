@@ -7,14 +7,14 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-    font-family: 'Montserrat', sans-serif;
+    /* background: #f9f9f9;
+    font-family: 'Montserrat', sans-serif; */
 }
 
 .navbar {
     font-size: 18px;
     background: transparent;
-
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 10px;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .main-nav li a:hover {
-    color: #ff715b;
+    color: #13aa52;
     text-decoration: none;
 }
 
@@ -47,6 +47,10 @@ body {
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+.active {
+    color: #13aa52 !important;
 }
 
 .navbar-toggle {
@@ -63,17 +67,29 @@ body {
     width: 100%;
 }
 
-.main-head {
+/* .main-head {
     text-align: center;
     margin: 30px 15px 0px 10px;
     padding: 40px 0 60px;
-}
+} */
 
-.main-head h1 {
-    font-family: 'Montserrat', sans-serif;
+.my_tabs h1 {
+    font-family: 'Roboto', sans-serif;
     font-weight: 900 !important;
     font-size: 45px;
     color: #263745;
+    text-align: center;
+    margin: 50px;
+}
+
+.my_tabs h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.my_tabs p {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-size: 18px;
 }
 
 .main-head img {
@@ -89,6 +105,8 @@ body {
     padding: 16px 20px;
     color: #263745;
     margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0.2, 0.1, 0.1, 0.2);
+    border-radius: 25px;
 }
 
 .coupon-cards-img {
@@ -106,6 +124,7 @@ body {
 
 .host-provider-name p {
     font-size: 15.5px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .discount {
@@ -145,7 +164,7 @@ body {
 
 .button-code {
     position: absolute;
-    background-color: #B43635;
+    background-color: #13aa52;
     color: white;
     padding: 1rem 4rem;
     font-size: 1.8rem;
@@ -164,7 +183,7 @@ body {
 }
 
 .button-title {
-    background-color: #E94D4C;
+    background-color: #13aa52;
     color: white;
     padding: 11px 12px;
     font-size: 16px;
@@ -174,10 +193,11 @@ body {
     overflow: hidden;
     white-space: nowrap;
     align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .button-overlay img {
-    margin-left: -1px;
+    margin-left: -3px;
     height: 45px;
 }
 
@@ -188,17 +208,18 @@ body {
 .button-code.revealed {
     display: none;
     background-color: transparent;
-    border: 2px dashed #B43635;
+    border: 2px dashed #13aa52;
     box-sizing: border-box;
     color: #333;
     overflow: initial;
     cursor: auto;
     font-size: 16px !important;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .button-code {
     position: absolute;
-    background-color: #B43635;
+    background-color: #13aa52;
     color: white;
     padding: 10px 40px;
     font-size: 18px;
@@ -218,6 +239,7 @@ body {
     width: 300px;
     width: 100%;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .news-card {
@@ -266,7 +288,7 @@ body {
 
 .about-webhosting h3 {
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #263745;
     font-weight: 700;
 }
@@ -282,7 +304,7 @@ body {
 
 .what-is-web-hostig h3 {
     font-size: 20px;
-    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
 
 .what-is-web-hostig p {
@@ -295,19 +317,19 @@ body {
 
 .what-is-web-hostig p a {
     text-decoration: underline;
-    color: #1989DB;
+    color: #13aa52;
 }
 
 .footer {
-    background: #282D30;
+    background: #263745;
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     vertical-align: middle;
-    font-family: Helvetica !important;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
@@ -321,9 +343,14 @@ body {
     color: white;
     text-decoration: none;
     font-weight: normal;
-    font-size: 16px;
-    font-family: Helvetica !important;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
 
+}
+
+.footer a:hover {
+    color: #13aa52;
+    text-decoration: underline;
 }
 
 .footer p {
@@ -377,6 +404,22 @@ body {
         font-weight: 900;
     }
 
+    .my_tabs h1 {
+        font-size: 26px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .my_country button {
+        /* border: 1px solid #263745 !important; */
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .my_country button {
+        padding: 15px !important;
+    }
+
     .main-head img {
         height: 30px;
         margin: 20px auto;
@@ -396,6 +439,10 @@ body {
 
     .coupon-cards-child {
         margin-bottom: 22px;
+    }
+
+    .my_tabs h2 {
+        font-size: 29px;
     }
 
     .discount {
@@ -429,25 +476,33 @@ body {
         margin-bottom: 22px;
     }
 
+    .news-card img {
+        height: 200px;
+        display: block;
+        width: auto;
+    }
+
     .about-webhosting {
         margin-top: 30px;
-        padding: 15px 30px;
+        /* padding: 15px 30px; */
     }
 
     #server-img img {
         display: block !important;
         margin-left: auto;
         margin-right: auto;
+        height: 200px;
+        width: 200px;
     }
 
     .what-is-web-hostig {
-        padding: 15px 30px;
+        /* padding: 15px 30px; */
     }
 
-    .container {
+    /* .container {
         padding-left: 25px !important;
         padding-right: 25px !important;
-    }
+    } */
 
     .col-xs-12 {
         display: flex;
@@ -463,6 +518,7 @@ body {
 
     .footer p {
         text-align: left;
+        margin-top: 0;
     }
 
     .footer .col-sm-4 {
@@ -476,3 +532,86 @@ body {
 }
 
 /* Responsive Website Code For Mobile & Tablet Ends Here */
+
+.nav {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    max-width: 100%;
+}
+
+.nav li.active {
+    width: auto !important;
+}
+
+.nav li {
+    display: inline-block !;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.my_country a {
+    border: none;
+    padding: 25px;
+}
+
+.my_country {
+    text-align: center;
+}
+
+.w3-button {
+    background: transparent;
+    border: none;
+}
+
+.w3-button img {
+    border: none;
+    margin: 15px auto;
+}
+.w3-button img:hover{
+    cursor: pointer;
+}
+
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    max-width: 100%;
+}
+
+#nav-container {
+
+    z-index: 1000;
+}
+
+#nav-container.scrolled a:hover {
+    color: #13aa52;
+}
+
+#nav-container.scrolled {
+    background: #263745;
+}
+
+#nav-container.scrolled a {
+    color: #fff;
+}
+
+#nav-container.scrolled .navbar-toggle {
+    color: white;
+}
+
+
+.my_country {
+    background: #fff;
+    margin: 15px auto;
+    box-shadow: 0 0 20px rgba(0.2, 0.1, 0.1, 0.2);
+    border-radius: 25px;
+    display: table;
+    margin: 15px auto;
+}
+.box{
+    margin: 50px auto !important;
+}

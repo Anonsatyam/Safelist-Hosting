@@ -25,14 +25,13 @@
         }
 
         .details h1 {
-            font-family: Helvetica;
-            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
             color: #263745;
         }
 
         .details h3 {
             font-size: 28px;
-            font-family: Helvetica;
+            font-family: 'Roboto', sans-serif;
             font-weight: bold;
             color: #263745;
             margin: 20px auto;
@@ -40,15 +39,25 @@
 
         .details p {
             font-size: 18px;
-            font-family: Helvetica;
             line-height: 1.56;
             word-spacing: 2px;
         }
 
         .details ul li {
             font-size: 18px;
-            font-family: Helvetica;
             margin-left: 30px;
+        }
+
+        .logo #logo-sticky {
+            display: none;
+        }
+
+        .scrolled #logo-normal {
+            display: none;
+        }
+
+        .scrolled #logo-sticky {
+            display: inherit;
         }
     </style>
 </head>
@@ -56,30 +65,34 @@
 <body>
     <!-- Navbar Code Starts From Here -->
     <div id="nav-container">
-        <div class="container">
-            <nav class="navbar">
+        <div class="container header-logo">
+            <nav class="navbar" id="navbar">
                 <span class="navbar-toggle" id="js-navbar-toggle">
                     <i class="fa fa-bars"></i>
                 </span>
-                <a href="/" class="logo"> <img src="./Images/Logo/1st logo.png" width="120px" alt=""> </a>
+                <a href="/" class="logo">
+                    <img class="logo-normal" id="logo-normal" src="./Images/Logo/1st logo.png" width="120px" alt="">
+                    <img class="logo-sticky" id="logo-sticky" src="./Images/New-Homepage/White Safelisthosting Logo.png"
+                        width="120px" alt="">
+                </a>
                 <ul class="main-nav" id="js-menu">
                     <li>
                         <a href="/" class="nav-links">Home</a>
                     </li>
                     <li>
-                        <a href="top-10-hosting.html" class="nav-links">Top 10 Hosting</a>
+                        <a href="top-10-hosting" class="nav-links">Top 10 Hosting</a>
                     </li>
                     <li>
-                        <a href="rdp-vps-coupons.html" class="nav-links">Coupons</a>
+                        <a href="rdp-vps-coupons" class="nav-links">Coupons</a>
                     </li>
                     <li>
-                        <a href="best-vps.html" class="nav-links">Best VPS</a>
+                        <a href="best-vps" class="nav-links">Best VPS</a>
                     </li>
                     <li>
-                        <a href="about.html" class="nav-links">About Us</a>
+                        <a href="about" class="nav-links">About Us</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="nav-links">Contact Us</a>
+                        <a href="contact" class="nav-links">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -148,14 +161,16 @@
             <p>Under no such event shall Safelist Hosting or its suppliers be liable for any damages (including, without
                 limitation, damages for loss of data or profit or due to business interruption,) arising from either the
                 use or inability to use the materials on Safelist Hosting Internet site, even if Safelist Hosting or a
-                Safelist Hosting authorized representative has been notified (orally or in writing) of the possibility of
+                Safelist Hosting authorized representative has been notified (orally or in writing) of the possibility
+                of
                 such damage. Because some jurisdictions do not allow limitations on implied warranties or limitations of
                 liability for consequential or incidental damages, these limitations may not apply to every user.</p>
 
 
             <h3>No Warranty</h3>
             <p>This website is provided “as is” without any representations or warranties, express or implied.
-                Safelist Hosting makes no representations or warranties in relation to this website or the information and
+                Safelist Hosting makes no representations or warranties in relation to this website or the information
+                and
                 materials provided on this website.
                 <br><br>
                 Without prejudice to the generality of the foregoing paragraph, Safelist Hosting does not warrant that:
@@ -170,9 +185,11 @@
 
             <h3>Revisions Policy</h3>
             <p>It is possible that the materials appearing on Safelist Hosting web site could include technical,
-                typographical, or photographic errors. Safelist Hosting does not warrant that any of the materials on its
+                typographical, or photographic errors. Safelist Hosting does not warrant that any of the materials on
+                its
                 web site are accurate, complete, or up-to-date. Safelist Hosting may make changes to the materials
-                contained on its web site at any time without notice. Safelist Hosting is not obligated to keep materials
+                contained on its web site at any time without notice. Safelist Hosting is not obligated to keep
+                materials
                 current.
                 <br><br>
                 Safelist Hosting may revise these terms and conditions from time-to-time. Revised terms and conditions
@@ -182,8 +199,10 @@
 
             <h3>Third Party Links</h3>
             <p>Safelist Hosting has not reviewed all of the sites linked to its Internet web site; therefore,
-                Safelist Hosting is not responsible for the contents of any such linked sites. Additionally, the inclusion
-                of any link does not imply that Safelist Hosting endorses that site. Use of any such linked web site is at
+                Safelist Hosting is not responsible for the contents of any such linked sites. Additionally, the
+                inclusion
+                of any link does not imply that Safelist Hosting endorses that site. Use of any such linked web site is
+                at
                 the user's own risk.</p>
         </div>
     </div>
@@ -202,6 +221,7 @@
                         <div class="col-sm-4">
                             <h4>Blog</h4>
                             <ul>
+                                <li><a href="blog">Our Blog</a></li>
                                 <li><a href="https://eurdp.com/hosting">Web Hosting</a></li>
                                 <li><a href="https://eurdp.com/windows-vps-rdp">Best VPS</a></li>
                                 <li><a href="https://99rdp.com/cheap-rdp/">Cheap RDP</a></li>
@@ -212,19 +232,19 @@
                         <div class="col-sm-4">
                             <h4>Reviews</h4>
                             <ul>
-                                <li><a href="best-vps.html">Windows VPS</a></li>
-                                <li><a href="rdp-vps-coupons.html">Best RDP</a></li>
-                                <li><a href="top-10-hosting.html">Wordpress Hosting</a></li>
+                                <li><a href="best-vps">Windows VPS</a></li>
+                                <li><a href="rdp-vps-coupons">Best RDP</a></li>
+                                <li><a href="top-10-hosting">Wordpress Hosting</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="sitemap.html">Sitemap</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                                <li><a href="contact">Contact</a></li>
+                                <li><a href="faq">FAQ</a></li>
+                                <li><a href="sitemap">Sitemap</a></li>
+                                <li><a href="privacy-policy">Privacy Policy</a></li>
+                                <li><a href="terms-of-use">Terms of Use</a></li>
                             </ul>
                         </div>
                     </div>

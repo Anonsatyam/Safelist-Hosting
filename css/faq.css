@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 #nav-container,
@@ -18,7 +18,7 @@ body {
 .navbar {
     font-size: 18px;
     background: transparent;
-    font-family: Helvetica;
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 10px;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .main-nav li a:hover {
-    color: #ff715b;
+    color: #13aa52;
     text-decoration: none;
 }
 
@@ -66,7 +66,8 @@ body {
     display: block;
     width: 100%;
 }
-.faq h2{
+
+.faq h2 {
     font-weight: bold;
     font-family: Helvetica;
     color: #263745;
@@ -84,16 +85,19 @@ body {
         width: 100%;
     }
 }
-.panel{
+
+.panel {
     margin: 30px auto;
 }
+
 .panel-heading {
     padding: 0 12px;
     border: 0;
-    border: 1px solid #ff715b;
-    border-radius:5px;
+    border: 1px solid #13aa52;
+    border-radius: 5px;
 }
-.panel-body{
+
+.panel-body {
     margin: 20px 30px;
 }
 
@@ -113,7 +117,7 @@ body {
     content: "\25bc";
     float: right;
     transition: all 0.5s;
-    color: #ff715b;
+    color: #13aa52;
 }
 
 .panel-heading.active a:before {
@@ -123,15 +127,15 @@ body {
 }
 
 .footer {
-    background: #282D30;
+    background: #263745;
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     vertical-align: middle;
-    font-family: Helvetica !important;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
@@ -145,9 +149,14 @@ body {
     color: white;
     text-decoration: none;
     font-weight: normal;
-    font-size: 16px;
-    font-family: Helvetica !important;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
 
+}
+
+.footer a:hover {
+    color: #13aa52;
+    text-decoration: underline;
 }
 
 .footer p {
@@ -195,15 +204,34 @@ body {
 
 /* Responsive Website Code For Mobile & Tablet Starts From Here */
 @media screen and (max-width: 768px) {
-    .container{
+    .details {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .details h1{
+        text-align: center;
+    }
+    .details h3{
+        font-size: 22px;
+    }
+
+    .container {
         padding-left: 25px !important;
         padding-right: 25px !important;
     }
+
     .col-xs-12 {
         display: flex;
         flex-direction: column-reverse;
         /* margin-top: 0 !important; */
-      }
+    }
+
+    .details .col-sm-8 img {
+        height: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+
     .footer img {
         margin: 20px 0;
         margin-left: auto;
@@ -212,14 +240,71 @@ body {
 
     .footer p {
         text-align: left;
+        margin-top: 0 !important;
     }
-    .footer .col-sm-4{
+
+    .footer .col-sm-4 {
         margin-bottom: 30px;
     }
-    .panel{
+
+    .panel {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #nav-container.scrolled .navbar-toggle {
+        color: white;
+    }
+
+    .logo #logo-sticky {
+        display: none;
+    }
+
+    .scrolled #logo-normal {
+        display: none;
+    }
+
+    .scrolled #logo-sticky {
+        display: inherit;
+    }
+    #sticky{
+        margin: 15px auto;
     }
 }
 
 /* Responsive Website Code For Mobile & Tablet End Here */
+
+.details .col-sm-4 .fa:hover {
+    background: #13aa52;
+    color: white;
+}
+
+#sticky:hover {
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav-container {
+
+    z-index: 1000;
+}
+
+#nav-container.scrolled {
+    background: #263745;
+    transition: 0.2s all ease-in-out;
+}
+
+#nav-container.scrolled a:hover {
+    color: #13aa52;
+}
+
+#nav-container.scrolled a {
+    color: #fff;
+}
+
+

@@ -7,18 +7,18 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
-#nav-container,
+/* #nav-container,
 #head-part {
     background: #f9f9f9;
-}
+} */
 
 .navbar {
     font-size: 18px;
     background: transparent;
-    font-family: Helvetica;
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 10px;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .main-nav li a:hover {
-    color: #ff715b;
+    color: #13aa52;
     text-decoration: none;
 }
 
@@ -73,14 +73,14 @@ body {
 
 #contact-text h2,
 #contact-form h2 {
-    font-family: Helvetica !important;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin: 30px auto;
     font-size: 36px;
 }
 
 #contact-text h3 {
-    font-family: Helvetica !important;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin: 30px auto;
     font-size: 32px;
@@ -88,12 +88,12 @@ body {
 
 #contact-text p {
     font-size: 18px;
-    font-family: Helvetica !important;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #contact-form textarea {
     font-size: 18px;
-    font-family: Helvetica;
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     background: #fff;
     padding: 20px 35px;
@@ -106,7 +106,7 @@ body {
 
 #contact-form input[type=text] {
     font-size: 18px;
-    font-family: Helvetica;
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     background: #fff;
     padding: 0 35px 0;
@@ -120,7 +120,7 @@ body {
 
 #contact-form input[type=email] {
     font-size: 18px;
-    font-family: Helvetica;
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     background: #fff;
     padding: 0 35px 0;
@@ -132,7 +132,7 @@ body {
     margin-bottom: 20px;
 }
 #contact-form a{
-    background: #ff715b;
+    background: #13aa52;
     padding: 9px 12px;
     width: 100%;
     max-width: 100%;
@@ -142,13 +142,13 @@ body {
     font-family: Helvetica;
     color: white;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 #contact-form input:focus{
-    border: 1px solid  #ff715b;
+    border: 1px solid  #13aa52;
 }
 #contact-form textarea:focus{
-    border: 1px solid  #ff715b;
+    border: 1px solid  #13aa52;
 }
 
 #contact-form input:focus::-webkit-input-placeholder {
@@ -159,15 +159,15 @@ body {
 }
 
 .footer {
-    background: #282D30;
+    background: #263745;
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     vertical-align: middle;
-    font-family: Helvetica !important;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
@@ -181,9 +181,14 @@ body {
     color: white;
     text-decoration: none;
     font-weight: normal;
-    font-size: 16px;
-    font-family: Helvetica !important;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
 
+}
+
+.footer a:hover {
+    color: #13aa52;
+    text-decoration: underline;
 }
 
 .footer p {
@@ -192,7 +197,6 @@ body {
     margin-top: 30px;
     letter-spacing: 2px;
 }
-
 /* Responsive Navbar Code For Mobile & Tablet Starts From Here */
 @media screen and (min-width: 768px) {
     .navbar {
@@ -235,6 +239,12 @@ body {
         padding-left: 25px !important;
         padding-right: 25px !important;
     }
+    #contact{
+        margin-top: 0 !important;
+    }
+    #contact-text h3{
+        font-size: 24px;
+    }
     .col-xs-12 {
         display: flex;
         flex-direction: column-reverse;
@@ -248,6 +258,7 @@ body {
 
     .footer p {
         text-align: left;
+        margin-top: 0;
     }
     .footer .col-sm-4{
         margin-bottom: 30px;
@@ -255,3 +266,26 @@ body {
 }
 
 /* Responsive Website Code For Mobile & Tablet End Here */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav-container {
+
+    z-index: 1000;
+}
+
+#nav-container.scrolled {
+    background: #263745;
+}
+
+#nav-container.scrolled a:hover {
+    color: #13aa52;
+}
+
+#nav-container.scrolled a {
+    color: #fff;
+}

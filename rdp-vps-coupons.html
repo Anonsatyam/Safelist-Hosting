@@ -16,36 +16,55 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Google font CND Link -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/coupon.css">
+    <style>
+        .logo #logo-sticky {
+            display: none;
+        }
+
+        .scrolled #logo-normal {
+            display: none;
+        }
+
+        .scrolled #logo-sticky {
+            display: inherit;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar Code Starts From here -->
-    <div class="container">
-        <nav class="navbar">
+    <div class="container header-logo" id="nav-container">
+        <nav class="navbar" id="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fa fa-bars"></i>
             </span>
-            <a href="/" class="logo"> <img src="./Images/Logo/1st logo.png" width="120px" alt=""> </a>
+            <a href="/" class="logo">
+                <img class="logo-normal" id="logo-normal" src="./Images/Logo/1st logo.png" width="120px" alt="">
+                <img class="logo-sticky" id="logo-sticky" src="./Images/New-Homepage/White Safelisthosting Logo.png"
+                    width="120px" alt="">
+            </a>
             <ul class="main-nav" id="js-menu">
                 <li>
                     <a href="/" class="nav-links">Home</a>
                 </li>
                 <li>
-                    <a href="top-10-hosting.html" class="nav-links">Top 10 Hosting</a>
+                    <a href="top-10-hosting" class="nav-links">Top 10 Hosting</a>
                 </li>
                 <li>
-                    <a href="rdp-vps-coupons.html" class="nav-links">Coupons</a>
+                    <a href="rdp-vps-coupons" class="nav-links">Coupons</a>
                 </li>
                 <li>
-                    <a href="best-vps.html" class="nav-links">Best VPS</a>
+                    <a href="best-vps" class="nav-links">Best VPS</a>
                 </li>
                 <li>
-                    <a href="about.html" class="nav-links">About Us</a>
+                    <a href="about" class="nav-links">About Us</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="nav-links">Contact Us</a>
+                    <a href="contact" class="nav-links">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -54,198 +73,796 @@
 
 
     <!-- Web Hosting Service Provider $ Coupon Section Code Starts From Here-->
-    <div class="container">
 
-        <!-- Web Hosting Service Provider Image Section Code Starts From Here-->
-        <div class="main-head">
-            <h1>Web Hosting Coupons</h1>
-            <p class="output"></p>
-            <div class="row">
-                <div class="col-sm-2"><img src="./Images/web-hosting-coupon/a2hosting-line.png" alt=""></div>
-                <div class="col-sm-2"><img src="./Images/web-hosting-coupon/bluehost-line.png" alt=""></div>
-                <div class="col-sm-2"><img src="./Images/web-hosting-coupon/godaddy.png" alt=""></div>
-                <div class="col-sm-2"><img src="./Images/web-hosting-coupon/hosting24.png" alt=""></div>
-                <div class="col-sm-2"><img src="./Images/web-hosting-coupon/hostinger-line.png" alt=""></div>
-                <div class="col-sm-2"><img src="./Images/web-hosting-coupon/wix.png" alt=""></div>
+    <div class="container my_tabs">
+        <h1>Web Hosting Coupons</h1>
+        <p class="output" style="text-align: center;"></p>
+        <!-- LAYOUT ONE STARTS FROM HERE-->
+        <div class="box">
+            <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #13aa52;">RDP Coupons</h2>
+            <div class="my_country">
+
+                <a class="w3-button act" onclick="openCity('one')"><img src="./Images/New-Homepage/Amazing.png"
+                        height="25px" alt=""></a>
+                <a class=" w3-button" onclick="openCity('two')"><img src="./Images/New-Homepage/99rdp_logo.png" alt=""
+                        height="25px"></a>
+                <a class=" w3-button" onclick="openCity('three')"><img src="./Images/New-Homepage/EURDP.png" alt=""
+                        height="25px"></a>
+            </div>
+
+            <div id="one" class="city col s12">
+
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-one"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-one" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-one">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-two"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-two" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-two">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-three"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-three" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-three">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="two" class="city col s12" style="display:none">
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-four"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-four" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-four">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-five"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-five" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-five">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-six"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-six" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-six">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="three" class="city col s12" style="display:none">
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-seven"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-seven" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-seven">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-eight"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-eight" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-eight">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-nine"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-nine" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-nine">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Web Hosting Service Provider Image Section Code Ends Here-->
+        <!-- LAYOUT ONE ENDS HERE-->
 
 
-        <!-- Coupon Section Code Starts From Here -->
-        <div class="coupon-cards">
 
-            <!-- First Coupon Section Code Strats From Here -->
-            <div class="row coupon-cards-child">
-                <div class="col-sm-2 coupon-cards-img">
-                    <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+
+        <!-- LAYOUT TWO STARTS FROM HERE -->
+        <div class="box">
+            <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #13aa52;">Web Hosting Coupons</h2>
+            <div class="my_country">
+                <a class=" w3-button" onclick="openstate('four')"><img
+                        src="./Images/web-hosting-coupon/a2hosting-line.png" height="25px" alt=""></a>
+                <a class=" w3-button" onclick="openstate('five')"><img src="./Images/web-hosting-coupon/godaddy.png"
+                        alt="" height="25px"></a>
+                <a class=" w3-button" onclick="openstate('six')"><img src="./Images/web-hosting-coupon/hosting24.png"
+                        alt="" height="25px"></a>
+            </div>
+
+            <div id="four" class="state col s12">
+
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-ten"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-ten" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-ten">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 host-provider-name">
-                    <h2>Hostinger Coupon</h2>
-                    <p>Limited Offer - 91% off Shared Web Hosting</p>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-11"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-11" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-11">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 discount">Save 91%</div>
-                <div class="col-sm-4 action-block">
-                    <div class="button" id="hr_provider-coupon_hostinger_1">
-                        <a href="#" target="_blank" id="button-hide"
-                            class="button-code button-hide toHide">HOSTINGREVIEW</a>
-                        <a href="#" target="_blank" id="button-overlay" class="button-overlay toHide">
-                            <div class="button-title">Reveal Coupon</div>
-                            <img src="./Images/web-hosting-coupon/corner.svg" alt="">
-                        </a>
-                        <div class="button-code revealed" id="revealed">HOSTINGREVIEW</div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-12"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-12" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-12">HOSTINGREVIEW</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- First Coupon Section Code Ends Here -->
 
-            <!-- Second Coupon Section Code Strats From Here -->
-            <div class="row coupon-cards-child">
-                <div class="col-sm-2 coupon-cards-img">
-                    <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+            <div id="five" class="state col s12" style="display:none">
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-13"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-13" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-13">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 host-provider-name">
-                    <h2>Hostinger Coupon</h2>
-                    <p>Limited Offer - 91% off Shared Web Hosting</p>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-14"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-14" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-14">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 discount">Save 91%</div>
-                <div class="col-sm-4 action-block">
-                    <div class="button" id="hr_provider-coupon_hostinger_1">
-                        <a href="#" target="_blank" id="button-hide"
-                            class="button-code button-hide toHide">HOSTINGREVIEW</a>
-                        <a href="#" target="_blank" id="button-overlay" class="button-overlay toHide">
-                            <div class="button-title">Reveal Coupon</div>
-                            <img src="./Images/web-hosting-coupon/corner.svg" alt="">
-                        </a>
-                        <div class="button-code revealed" id="revealed">HOSTINGREVIEW</div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-15"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-15" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-15">HOSTINGREVIEW</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Second Coupon Section Code Ends Here -->
 
+            <div id="six" class="state col s12" style="display:none">
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-16"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-16" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-16">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- First Coupon Section Code Ends Here -->
 
-            <!-- Third Coupon Section Code Strats From Here -->
-            <div class="row coupon-cards-child">
-                <div class="col-sm-2 coupon-cards-img">
-                    <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-17"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-17" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-17">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 host-provider-name">
-                    <h2>Hostinger Coupon</h2>
-                    <p>Limited Offer - 91% off Shared Web Hosting</p>
-                </div>
-                <div class="col-sm-2 discount">Save 91%</div>
-                <div class="col-sm-4 action-block">
-                    <div class="button" id="hr_provider-coupon_hostinger_1">
-                        <a href="#" target="_blank" id="button-hide" class="button-code button-hide">HOSTINGREVIEW</a>
-                        <a href="#" target="_blank" id="button-overlay" class="button-overlay">
-                            <div class="button-title">Reveal Coupon</div>
-                            <img src="./Images/web-hosting-coupon/corner.svg" alt="">
-                        </a>
-                        <div class="button-code revealed" id="revealed">HOSTINGREVIEW</div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-18"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-18" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-18">HOSTINGREVIEW</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Third Coupon Section Code Ends Here -->
         </div>
-        <!-- Coupon Section Code Ends Here -->
-    </div>
-    <!-- Web Hosting Service Provider $ Coupon Section Code Ends Here-->
+        <!-- LAYOUT TWO ENDS HERE -->
 
 
-    <!-- News Card Section Code Starets From Here -->
-    <div class="container news-card">
-        <h3>You may also like:</h3>
-        <a href="#" id="news-card-child">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./Images/web-hosting-coupon/start-a-blog.png" alt="">
-                    <div class="news-title">
-                        How To Start A Blog For Free – Set Up Your Online Presence
+
+
+        <!-- LAYOUT THREE STARTS FROM HERE -->
+        <div class="box">
+            <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #13aa52;">Dedicated Servers Coupons
+            </h2>
+            <div class="my_country">
+                <a class=" w3-button" onclick="opencountry('seven')"><img
+                        src="./Images/web-hosting-coupon/a2hosting-line.png" height="25px" alt=""></a>
+                <a class=" w3-button" onclick="opencountry('eight')"><img src="./Images/web-hosting-coupon/godaddy.png"
+                        alt="" height="25px"></a>
+                <a class=" w3-button" onclick="opencountry('nine')"><img src="./Images/web-hosting-coupon/hosting24.png"
+                        alt="" height="25px"></a>
+            </div>
+
+            <div id="seven" class="country col s12">
+
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-19"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-19" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-19">HOSTINGREVIEW</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="./Images/web-hosting-coupon/cheap-builder.png" alt="">
-                    <div class="news-title">
-                        How To Start A Blog For Free – Set Up Your Online Presence
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-20"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-20" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-20">HOSTINGREVIEW</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="./Images/web-hosting-coupon/e-commerce.png" alt="">
-                    <div class="news-title">
-                        How To Start A Blog For Free – Set Up Your Online Presence
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostinger.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostinger Coupon</h2>
+                        <p>Limited Offer - 91% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 91%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-21"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-21" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-21">HOSTINGREVIEW</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </a>
-    </div>
-    <!-- News Card Section Code Ends Here -->
+
+            <div id="eight" class="country col s12" style="display:none">
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-22"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-22" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-22">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-23"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-23" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-23">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/hostpapa.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-24"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-24" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-24">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nine" class="country col s12" style="display:none">
+                <!-- First Coupon Section Code Strats From Here -->
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-25"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-25" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-25">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- First Coupon Section Code Ends Here -->
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-26"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-26" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-26">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row coupon-cards-child">
+                    <div class="col-sm-2 coupon-cards-img">
+                        <img src="./Images/web-hosting-coupon/godaddy.png" alt="">
+                    </div>
+                    <div class="col-sm-4 host-provider-name">
+                        <h2>Hostpapa Coupon</h2>
+                        <p>Limited Offer - 80% off Shared Web Hosting</p>
+                    </div>
+                    <div class="col-sm-2 discount">Save 81%</div>
+                    <div class="col-sm-4 action-block">
+                        <div class="button" id="hr_provider-coupon_hostinger_1">
+                            <a href="#" target="_blank" id="button-hide-27"
+                                class="button-code button-hide toHide">HOSTINGREVIEW</a>
+                            <a href="#" target="_blank" id="button-overlay-27" class="button-overlay toHide">
+                                <div class="button-title">Reveal Coupon</div>
+                                <img src="./Images/web-hosting-coupon/corner.svg" alt="">
+                            </a>
+                            <div class="button-code revealed" id="revealed-27">HOSTINGREVIEW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LAYOUT THREE ENDS HERE -->
 
 
-    <!-- About Web Hosting Section Code Starts From Here -->
-    <div class="container about-webhosting">
-        <div class="row">
-            <div class="col-sm-8">
-                <h3>Choose the Best Website Hosting</h3>
-                <p>
-                    We want you to get the best and most complete information in the business, so that's what we've
-                    done
-                    here. This was made possible by us buying the services of each hosting provider and putting them
+        <!-- News Card Section Code Starets From Here -->
+        <div class=" news-card">
+            <h3>You may also like:</h3>
+            <a href="#" id="news-card-child">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="./Images/web-hosting-coupon/start-a-blog.png" alt="">
+                        <div class="news-title">
+                            How To Start A Blog For Free – Set Up Your Online Presence
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./Images/web-hosting-coupon/cheap-builder.png" alt="">
+                        <div class="news-title">
+                            How To Start A Blog For Free – Set Up Your Online Presence
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./Images/web-hosting-coupon/e-commerce.png" alt="">
+                        <div class="news-title">
+                            How To Start A Blog For Free – Set Up Your Online Presence
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- News Card Section Code Ends Here -->
+
+
+        <!-- About Web Hosting Section Code Starts From Here -->
+        <div class=" about-webhosting">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3>Choose the Best Website Hosting</h3>
+                    <p>
+                        We want you to get the best and most complete information in the business, so that's what we've
+                        done
+                        here. This was made possible by us buying the services of each hosting provider and putting them
+                        to
+                        a number of real-life tests. This way, we know that each provider on our list offers superb
+                        speed,
+                        helpful customer support, and plenty of tips to help you get started.
+                        <br><br>
+                        You can't go wrong with any of the companies here - but in the table above you'll see the main
+                        features of each webhosting provider, so you can choose with confidence. Give any of these
+                        providers
+                        a shot, and host your website with the best companies in the world.
+                    </p>
+                </div>
+                <div class="col-sm-4" id="server-img">
+                    <img src="./Images/Homepage/server.svg" alt="" height="333" width="300">
+                </div>
+            </div>
+        </div>
+        <!-- About Web Hosting Section Code Ends Here -->
+
+        <!-- What is web hosting section code starts from here -->
+        <div class="container">
+            <div class="what-is-web-hostig">
+                <h3>How to pick India-oriented website hosting service that is the best for you?</h3>
+                <p>Hosting services are available in a broad variety of pricing plans and essential features. If you
+                    want to
+                    start a simple blog, free or best cheap web hosting services might be just enough for you. Looking
                     to
-                    a number of real-life tests. This way, we know that each provider on our list offers superb
-                    speed,
-                    helpful customer support, and plenty of tips to help you get started.
-                    <br><br>
-                    You can't go wrong with any of the companies here - but in the table above you'll see the main
-                    features of each webhosting provider, so you can choose with confidence. Give any of these
-                    providers
-                    a shot, and host your website with the best companies in the world.
+                    start
+                    your own business? Possibly it’s rational to look for a cloud, VPS or managed hosting services.
+                    <br>
+                    Let’s take a look at a variety of different hosting features to help you decide which one is the
+                    right
+                    one
+                    for you and why.
                 </p>
-            </div>
-            <div class="col-sm-4" id="server-img">
-                <img src="./Images/Homepage/server.svg" alt="" height="333" width="300">
-            </div>
-        </div>
-    </div>
-    <!-- About Web Hosting Section Code Ends Here -->
-
-    <!-- What is web hosting section code starts from here -->
-    <div class="container">
-        <div class="what-is-web-hostig">
-            <h3>How to pick India-oriented website hosting service that is the best for you?</h3>
-            <p>Hosting services are available in a broad variety of pricing plans and essential features. If you want to
-                start a simple blog, free or best cheap web hosting services might be just enough for you. Looking to
-                start
-                your own business? Possibly it’s rational to look for a cloud, VPS or managed hosting services.
                 <br>
-                Let’s take a look at a variety of different hosting features to help you decide which one is the right
-                one
-                for you and why.
-            </p>
-            <br>
-            <h3>WordPress hosting India</h3>
-            <p>
-                If you are looking to build a WordPress-based website you don’t need to read every hosting review you
-                can find. Just look for these features: automatic WordPress install and updates, unique WP themes, 24/7
-                tech support, easy-to-use control panel, security features, and the last, but not least - great
-                performance from the provider of your choice.
-            </p>
-            <br>
-            <h3>Email hosting</h3>
-            <p>If you are looking for the best deal when considering cheap or even free email hosts, the features to
-                look for are a free domain name, unlimited emails, SMAP filters, premium encryption and, of course,
-                responsive expert support. Nevertheless, free <a href="#">email hosting with a custom domain</a> is the
-                winner in this
-                one.</p>
+                <h3>WordPress hosting India</h3>
+                <p>
+                    If you are looking to build a WordPress-based website you don’t need to read every hosting review
+                    you
+                    can find. Just look for these features: automatic WordPress install and updates, unique WP themes,
+                    24/7
+                    tech support, easy-to-use control panel, security features, and the last, but not least - great
+                    performance from the provider of your choice.
+                </p>
+                <br>
+                <h3>Email hosting</h3>
+                <p>If you are looking for the best deal when considering cheap or even free email hosts, the features to
+                    look for are a free domain name, unlimited emails, SMAP filters, premium encryption and, of course,
+                    responsive expert support. Nevertheless, free <a href="#">email hosting with a custom domain</a> is
+                    the
+                    winner in this
+                    one.</p>
+            </div>
         </div>
+        <!-- What is web hosting section code ends here -->
     </div>
-    <!-- What is web hosting section code ends here -->
 
     <!-- Footer Section Code Starts From here -->
     <div class="footer">
         <div class="container">
             <div class="row col-xs-12">
                 <div class="col-sm-6">
-                    <img src="./Images/New-Homepage/White Safelisthosting Logo.png" alt="" width="120px">
+                    <img src="./Images//New-Homepage/White Safelisthosting Logo.png" alt="" width="120px">
                     <p>©2020 Safelist Hosting. All Rights Reserved.</p>
                 </div>
                 <div class="col-sm-6">
@@ -253,6 +870,7 @@
                         <div class="col-sm-4">
                             <h4>Blog</h4>
                             <ul>
+                                <li><a href="blog">Our Blog</a></li>
                                 <li><a href="https://eurdp.com/hosting">Web Hosting</a></li>
                                 <li><a href="https://eurdp.com/windows-vps-rdp">Best VPS</a></li>
                                 <li><a href="https://99rdp.com/cheap-rdp/">Cheap RDP</a></li>
@@ -263,19 +881,19 @@
                         <div class="col-sm-4">
                             <h4>Reviews</h4>
                             <ul>
-                                <li><a href="best-vps.html">Windows VPS</a></li>
-                                <li><a href="rdp-vps-coupons.html">Best RDP</a></li>
-                                <li><a href="top-10-hosting.html">Wordpress Hosting</a></li>
+                                <li><a href="best-vps">Windows VPS</a></li>
+                                <li><a href="rdp-vps-coupons">Best RDP</a></li>
+                                <li><a href="top-10-hosting">Wordpress Hosting</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="sitemap.html">Sitemap</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                                <li><a href="contact">Contact</a></li>
+                                <li><a href="faq">FAQ</a></li>
+                                <li><a href="sitemap">Sitemap</a></li>
+                                <li><a href="privacy-policy">Privacy Policy</a></li>
+                                <li><a href="terms-of-use">Terms of Use</a></li>
                             </ul>
                         </div>
                     </div>
@@ -303,6 +921,33 @@
     <script>
         let date = new Date().toDateString();
         document.querySelector('.output').textContent = date;
+
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        };
+
+        function openstate(stateName) {
+            var i;
+            var x = document.getElementsByClassName("state");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(stateName).style.display = "block";
+        }
+
+        function opencountry(countryName) {
+            var i;
+            var x = document.getElementsByClassName("country");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(countryName).style.display = "block";
+        }
     </script>
     <script src="./Js/script.js"></script>
 </body>

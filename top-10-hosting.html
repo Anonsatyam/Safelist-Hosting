@@ -15,58 +15,80 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Google font CND Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/top-hosting.css">
+    <link rel="stylesheet" href="./css/top-hosting.css?Thursday 24th of April 2008 04:45:21 PM">
+    <style>
+        .logo #logo-sticky {
+            display: none;
+        }
+
+        .scrolled #logo-normal {
+            display: none;
+        }
+
+        .scrolled #logo-sticky {
+            display: inherit;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar Code Starts From Here -->
-    <div class="container">
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fa fa-bars"></i>
-            </span>
-            <a href="/" class="logo"> <img src="./Images/Logo/1st logo.png" width="120px" alt=""> </a>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="/" class="nav-links">Home</a>
-                </li>
-                <li>
-                    <a href="top-10-hosting.html" class="nav-links">Top 10 Hosting</a>
-                </li>
-                <li>
-                    <a href="rdp-vps-coupons.html" class="nav-links">Coupons</a>
-                </li>
-                <li>
-                    <a href="best-vps.html" class="nav-links">Best VPS</a>
-                </li>
-                <li>
-                    <a href="about.html" class="nav-links">About Us</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-links">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
+    <div id="nav-container">
+        <div class="container header-logo">
+            <nav class="navbar" id="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <a href="/" class="logo">
+                    <img class="logo-normal" id="logo-normal" src="./Images/Logo/1st logo.png" width="120px" alt="">
+                    <img class="logo-sticky" id="logo-sticky" src="./Images/New-Homepage/White Safelisthosting Logo.png"
+                        width="120px" alt="">
+                </a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="/" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="top-10-hosting" class="nav-links">Top 10 Hosting</a>
+                    </li>
+                    <li>
+                        <a href="rdp-vps-coupons" class="nav-links">Coupons</a>
+                    </li>
+                    <li>
+                        <a href="best-vps" class="nav-links">Best VPS</a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-links">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-links">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
     <!-- Navbar Code Ends Here -->
 
     <!-- Info Card Code Container Starts From Here -->
     <div class="container">
         <div class="main-head">
-            <h1>Top 10 Best Web Hosting providers</h1>
+            <h1>Top 10 Shared Hosting Services</h1>
             <p class="output"></p>
         </div>
         <!-- First(Parent) Card Code Starts From Here -->
-        <div class="main-card">
+        <!-- <div class="main-card">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4" id="side-img">
                         <img src="./Images/Homepage/bluehost-line.png" alt=""
                             style="margin-left: auto; margin-right: auto; width: auto; display: block; margin-bottom: 0;">
-                        <br><br>
-                        <img src="./Images/Homepage/best-offer.svg" alt="" height="280" width="280"
+
+                        <img id="best-offer" src="./Images/Homepage/best-offer.svg" alt="" height="280" width="280"
                             style="margin-left: auto; margin-right: auto; margin-top: 0;  display: block;">
                     </div>
                     <div class="col-sm-8" id="side-text">
@@ -116,7 +138,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- First(Parent) Card Code Ends Here -->
 
         <!-- Second(Child) Card Code Starts From Here -->
@@ -124,28 +146,32 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 child-card-img">
-                        <img src="./Images/Homepage/hostgator.png" alt="" width="150px">
+                        <a href="https://www.bluehost.com/">
+                            <img src="./Images/top-10/blue-host-624x179.png" alt="" width="150px">
+                        </a>
                     </div>
-                    <div class="col-sm-6 child-card-description">
-                        <h2>Hostgator</h2>
-
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
                         <p>
-                            HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
                             it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
-                            can help even a complete beginner to make a beautiful website in no time.
+                            can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy to use</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Friendly Starting Pricing</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Great Gator site builder</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Read for Wordpress</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy migration</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide range of service</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free Domain Name</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free SSL Certificate</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 1-Click WordPress Installation</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 24/7 Technical Support</li>
                             </ul>
-                            <a class="more-info" href="#">More info</a>
                         </p>
 
                     </div>
-                    <div class="col-sm-2 child-card-rating">
+                    <!-- <div class="col-sm-3" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – Unlimited</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
                         <h3>9.8</h3>
                         <div class="rating-stars">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
@@ -154,43 +180,248 @@
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                         </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – Unlimited</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-sm-2 child-card-button">
-                        <button><a href="#">Visit site</a></button>
+                        <h3>
+                            Starts from <br>
+                            <span>$2.95</span>
+                        </h3>
+                        <button><a href="https://www.bluehost.com/">Visit site</a></button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Second(Child) Card Code Ends Here -->
 
-        <!-- Third(Child) Card Code Starts From Here -->
+        <!-- Third Clild Card Starts From Here -->
         <div class="child-card">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 child-card-img">
-                        <img src="./Images/Homepage/hostgator.png" alt="" width="150px">
+                        <a href="https://www.fastcomet.com/">
+                            <img src="./Images/top-10/fastcomet-logo-blue_600x150_v2.png" alt="" width="150px">
+                        </a>
                     </div>
-                    <div class="col-sm-6 child-card-description">
-                        <h2>Hostgator</h2>
-
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
                         <p>
-                            HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
                             it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
-                            can help even a complete beginner to make a beautiful website in no time.
+                            can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy to use</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Friendly Starting Pricing</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Great Gator site builder</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Read for Wordpress</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy migration</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide range of service</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Industry Standard cPanel w/ Unlimited
+                                    Domains</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 15-35 GB SSD Storage per Plan &
+                                    Unmetered Bandwidth</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Select Geo-Location from 7 Different
+                                    Intl. Data Centers</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free SSL/TLS Certificates for all
+                                    Hosted Domains</li>
                             </ul>
-                            <a class="more-info" href="#">More info</a>
                         </p>
 
                     </div>
-                    <div class="col-sm-2 child-card-rating">
-                        <h3>9.8</h3>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>9.5</h3>
+                        <div class="rating-stars">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                        </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2 child-card-button">
+                        <h3>
+                            Starts from <br>
+                            <span>$2.95</span>
+                        </h3>
+                        <button><a href="https://www.fastcomet.com/">Visit site</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth child card starts from here -->
+        <div class="child-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 child-card-img">
+                        <a href="https://www.a2hosting.com/">
+                            <img src="./Images/top-10/a2hosting_320x80.png" alt="" width="150px">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
+                        <p>
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
+                            can help even a complete beginner to make a beautiful website in no time. -->
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> cPanel & CentOS with
+                                    Developer-Friendly Toolset</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Support for PHP 5.3-5.6 as well as
+                                    PHP 7.0 & 7.1 Node.js
+                                </li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Proprietary SwiftServer & Turbo
+                                    Platforms
+                                </li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Turbo Servers Benchmark Speeds 20x
+                                    Apache</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>9.2</h3>
+                        <div class="rating-stars">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                        </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> Unlimited</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2 child-card-button">
+                        <h3>
+                            Starts from <br>
+                            <span>$2.99</span>
+                        </h3>
+                        <button><a href="https://www.a2hosting.com/">Visit site</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fifth card starts from here -->
+        <div class="child-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 child-card-img">
+                        <a href="https://www.interserver.net/">
+                            <img src="./Images/top-10/interserver_320x80.png" alt="" width="150px">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
+                        <p>
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
+                            can help even a complete beginner to make a beautiful website in no time. -->
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free Website Migration & $1.99 Domain
+                                    Name</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Low Density Hardware Maintained at
+                                    50% Capacity</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> SSD Storage in RAID-10 Arrays & MySQL
+                                    on SSD</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> No Increased Pricing on Renewal Rates
+                                </li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>8.9</h3>
+                        <div class="rating-stars">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                        </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> Unlimited</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2 child-card-button">
+                        <h3>
+                            Starts from <br>
+                            <span>$5.00</span>
+                        </h3>
+                        <button><a href="https://www.interserver.net/">Visit site</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sixth card starts from here -->
+        <div class="child-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 child-card-img">
+                        <a href="https://www.hostinger.com/">
+                            <img src="./Images/top-10/hostinger_320x80.png" alt="" width="150px">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
+                        <p>
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
+                            can help even a complete beginner to make a beautiful website in no time. -->
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free Domain Name on Unlimited Plans
+                                </li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> MySQL Databases with InnoDB Support
+                                </li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free SSL Certificate on All Business
+                                    Plans</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Add Extra RAM & Dedicated CPU Cores
+                                </li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>8.8</h3>
                         <div class="rating-stars">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
@@ -198,43 +429,62 @@
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/grey-star.svg" alt="" height="15px" width="16px">
                         </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> 10GB - 30GB</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> 102.4 GB – Unlimited</span>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                     <div class="col-sm-2 child-card-button">
-                        <button><a href="#">Visit site</a></button>
+                        <h3>
+                            Starts from <br>
+                            <span>$0.99</span>
+                        </h3>
+                        <button><a href="https://www.hostinger.com/">Visit site</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Third(Child) Card Code Ends Here -->
 
-        <!-- Fourth(Child) Card Code Starts From Here -->
+        <!-- Seventh Card Starts From Here -->
         <div class="child-card">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 child-card-img">
-                        <img src="./Images/Homepage/hostgator.png" alt="" width="150px">
+                        <a href="https://chemicloud.com/">
+                            <img src="./Images/top-10/color-chemicloud-logo.png" alt="" width="150px">
+                        </a>
                     </div>
-                    <div class="col-sm-6 child-card-description">
-                        <h2>Hostgator</h2>
-
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
                         <p>
-                            HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
                             it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
-                            can help even a complete beginner to make a beautiful website in no time.
+                            can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy to use</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Friendly Starting Pricing</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Great Gator site builder</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Read for Wordpress</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy migration</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide range of service</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Nginx, Memcached, & OPcache Options
+                                    for CMS</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> LAMP Websites with Google
+                                    mod_PageSpeed</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Use Multiple PHP Versions on Domain
+                                    Names</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Free "Let's Encrypt" SSL/TLS
+                                    Certificates</li>
                             </ul>
-                            <a class="more-info" href="#">More info</a>
                         </p>
 
                     </div>
-                    <div class="col-sm-2 child-card-rating">
-                        <h3>9.8</h3>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>8.7</h3>
                         <div class="rating-stars">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
@@ -242,43 +492,62 @@
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/grey-star.svg" alt="" height="15px" width="16px">
                         </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> 15GB - 5GB</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
                     </div>
                     <div class="col-sm-2 child-card-button">
-                        <button><a href="#">Visit site</a></button>
+                        <h3>
+                            Starts from <br>
+                            <span>$2.76</span>
+                        </h3>
+                        <button><a href="https://chemicloud.com/">Visit site</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fourth(Child) Card Code Ends Here -->
 
-        <!-- Fifth(Child) Card Code Starts From Here -->
+
+        <!-- Eighth Card Starts From here -->
         <div class="child-card">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 child-card-img">
-                        <img src="./Images/Homepage/hostgator.png" alt="" width="150px">
+                        <a href="https://www.tmdhosting.com/">
+                            <img src="./Images/top-10/tmdhosting_320x80.png" alt="" width="150px">
+                        </a>
                     </div>
-                    <div class="col-sm-6 child-card-description">
-                        <h2>Hostgator</h2>
-
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
                         <p>
-                            HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
                             it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
-                            can help even a complete beginner to make a beautiful website in no time.
+                            can help even a complete beginner to make a beautiful website in no time. -->
                             <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy to use</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Friendly Starting Pricing</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Great Gator site builder</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Read for Wordpress</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Easy migration</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Wide range of service</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited Websites, SSD Storage, &
+                                    MySQL</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> "Let's Encrypt" SSL/TLS Certificates
+                                </li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> SSD Storage Benchmarks at 20x Faster
+                                    Server I/O</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Advanced Security with SpamExperts &
+                                    Backups</li>
                             </ul>
-                            <a class="more-info" href="#">More info</a>
                         </p>
 
                     </div>
-                    <div class="col-sm-2 child-card-rating">
-                        <h3>9.8</h3>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>8.5</h3>
                         <div class="rating-stars">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
@@ -286,14 +555,200 @@
                             <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
                             <img src="./Images/Homepage/grey-star.svg" alt="" height="15px" width="16px">
                         </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> Unlimited</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
                     </div>
                     <div class="col-sm-2 child-card-button">
-                        <button><a href="#">Visit site</a></button>
+                        <h3>
+                            Starts from <br>
+                            <span>$2.95</span>
+                        </h3>
+                        <button><a href="https://www.tmdhosting.com/">Visit site</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fifth(Child) Card Code Ends Here -->
+
+        <!-- Ninth card Starts From Here -->
+        <div class="child-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 child-card-img">
+                        <a href="https://www.heficed.com/">
+                            <img src="./Images/top-10/logo-heficed-600.png" alt="" width="150px">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
+                        <p>
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                            it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
+                            can help even a complete beginner to make a beautiful website in no time. -->
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Choice of cPanel of DirectAdmin for Server Settings</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Variable Support for PHP Versions 4.4 to 7.0</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> 1 Gbit Network Uplink Speeds on Data Transfer</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Schedule Secure Data Backups for Emergency</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                            <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>8.4</h3>
+                        <div class="rating-stars">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/grey-star.svg" alt="" height="15px" width="16px">
+                        </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> 40 GB - 1000 GB</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2 child-card-button">
+                        <h3>
+                            Starts from <br>
+                            <span>$15.00</span>
+                        </h3>
+                        <button><a href="https://www.heficed.com/">Visit site</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tenth card starts from here -->
+        <div class="child-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 child-card-img">
+                        <a href="https://www.hostpapa.com/">
+                            <img src="./Images/top-10/hostpapa-logo.png" alt="" width="150px">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
+                        <p>
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                                    it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
+                                    can help even a complete beginner to make a beautiful website in no time. -->
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Premium Hardware Optimized for Network Performance</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Use HostPapa's Proprietary Site Builder</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Multi-Lingual Customer Support</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Server Firewall & Automated Intrusion Detection</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                                <ul style="list-style-type: none;">
+                                    <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                                    <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                                </ul>
+                            </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>8.2</h3>
+                        <div class="rating-stars">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/grey-star.svg" alt="" height="15px" width="16px">
+                        </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> 100 GB - Unlimited</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2 child-card-button">
+                        <h3>
+                            Starts from <br>
+                            <span>$2.95</span>
+                        </h3>
+                        <button><a href="https://www.hostpapa.com/">Visit site</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eleventh Card Starts From Here -->
+        <div class="child-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 child-card-img">
+                        <a href="https://www.inmotionhosting.com/">
+                            <img src="./Images/top-10/inmotion_320x80.png" alt="" width="150px">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 child-card-description">
+                        <!-- <h2>Bluehost</h2> -->
+                        <p>
+                            <!-- HostGator is a one-stop-shop for all things hosting. In addition to regular shared hosting,
+                                    it also sells domains, offers VPS and dedicated servers, and a Gator website builder that
+                                    can help even a complete beginner to make a beautiful website in no time. -->
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Choose the International Max Speed Zone™</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Web Developer & Programming Support</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> SSD Storage Standard Across All Accounts</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> SSH Access, Secure IMAP Email, & WP-CLI</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <!-- <div class="col-sm-2" id="space__bandwidth">
+                                <ul style="list-style-type: none;">
+                                    <li><i class="fa fa-database"></i><span><b>Space:</b> 50 GB – 35 GB</span></li>
+                                    <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                                </ul>
+                            </div> -->
+                    <div class="col-sm-4 child-card-rating">
+                        <h3>7.7</h3>
+                        <div class="rating-stars">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/star.svg" alt="" height="15px" width="16px">
+                            <img src="./Images/Homepage/grey-star.svg" alt="" height="15px" width="16px">
+                        </div>
+                        <div id="space__bandwidth">
+                            <ul style="list-style-type: none;">
+                                <li><i class="fa fa-database"></i><span><b>Space:</b> Unlimited</span></li>
+                                <li><i class="fa fa-tachometer"></i><span><b>Bandwidth:</b> Unlimited</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2 child-card-button">
+                        <h3>
+                            Starts from <br>
+                            <span>$3.99</span>
+                        </h3>
+                        <button><a href="https://www.inmotionhosting.com/">Visit site</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <!-- Choose Web Hosting Section Code Starts From Here -->
@@ -381,6 +836,7 @@
                         <div class="col-sm-4">
                             <h4>Blog</h4>
                             <ul>
+                                <li><a href="blog">Our Blog</a></li>
                                 <li><a href="https://eurdp.com/hosting">Web Hosting</a></li>
                                 <li><a href="https://eurdp.com/windows-vps-rdp">Best VPS</a></li>
                                 <li><a href="https://99rdp.com/cheap-rdp/">Cheap RDP</a></li>
@@ -391,19 +847,19 @@
                         <div class="col-sm-4">
                             <h4>Reviews</h4>
                             <ul>
-                                <li><a href="best-vps.html">Windows VPS</a></li>
-                                <li><a href="rdp-vps-coupons.html">Best RDP</a></li>
-                                <li><a href="top-10-hosting.html">Wordpress Hosting</a></li>
+                                <li><a href="best-vps">Windows VPS</a></li>
+                                <li><a href="rdp-vps-coupons">Best RDP</a></li>
+                                <li><a href="top-10-hosting">Wordpress Hosting</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="sitemap.html">Sitemap</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                                <li><a href="contact">Contact</a></li>
+                                <li><a href="faq">FAQ</a></li>
+                                <li><a href="sitemap">Sitemap</a></li>
+                                <li><a href="privacy-policy">Privacy Policy</a></li>
+                                <li><a href="terms-of-use">Terms of Use</a></li>
                             </ul>
                         </div>
                     </div>

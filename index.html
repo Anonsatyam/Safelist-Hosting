@@ -15,38 +15,145 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Google font CND Link -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?Thursday 24th of April 2008 04:45:21 PM">
+
+    <!-- Animation On Scrolling CND Links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        /* Scroll To Top Button */
+
+        #button {
+            display: inline-block;
+            background-color: #4C4859;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s,
+                opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #button::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            /* line-height: 50px; */
+            color: #fff;
+        }
+
+        #button:hover {
+            cursor: pointer;
+            background-color: #06d6a0;
+        }
+
+        #button:active {
+            background-color: #06d6a0;
+        }
+
+        #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 100px;
+            color: #13aa52;
+            font-size: 20px;
+        }
+
+        .logo #logo-sticky {
+            display: none;
+        }
+
+        .scrolled #logo-normal {
+            display: none;
+        }
+
+        .scrolled #logo-sticky {
+            display: inherit;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="row" id="popup">
+                <div class="col-sm-6" id="left_img"></div>
+                <div class="col-sm-6">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="row">
+                                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <h4 class="modal-title">Subscribe To Our Newslatter</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form">
+                                <span><i class="fa fa-envelope"></i></span>
+                                <input type="email" maxlength="255" name="Email" value="" fieldType=9
+                                    placeholder="Your Email" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Your Email'" />
+                                <button id='formsubmit' type="submit"><a href="#">Submit</a></button>
+                                <small style="text-align: center; display: block;">Don't worry we don't spam
+                                    you.</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <!-- Navbar Code Starts From Here -->
-    <div id="nav-container">
-        <div class="container">
-            <nav class="navbar">
+    <div class="navbar-default" id="nav-container">
+        <div class="container header-logo">
+            <nav class="navbar" id="navbar">
                 <span class="navbar-toggle" id="js-navbar-toggle">
                     <i class="fa fa-bars"></i>
                 </span>
-                <a href="/" class="logo"> <img src="./Images/Logo/1st logo.png" width="120px" alt=""> </a>
+                <a href="/" class="logo">
+                    <img class="logo-normal" id="logo-normal" src="./Images/Logo/1st logo.png" width="120px" alt="">
+                    <img class="logo-sticky" id="logo-sticky" src="./Images/New-Homepage/White Safelisthosting Logo.png"
+                        width="120px" alt="">
+                </a>
                 <ul class="main-nav" id="js-menu">
                     <li>
-                        <a href="/" class="nav-links">Home</a>
+                        <a href="/" class="nav-links active">Home</a>
                     </li>
                     <li>
-                        <a href="top-10-hosting.html" class="nav-links">Top 10 Hosting</a>
+                        <a href="top-10-hosting" class="nav-links">Top 10 Hosting</a>
                     </li>
                     <li>
-                        <a href="rdp-vps-coupons.html" class="nav-links">Coupons</a>
+                        <a href="rdp-vps-coupons" class="nav-links">Coupons</a>
                     </li>
                     <li>
-                        <a href="best-vps.html" class="nav-links">Best VPS</a>
+                        <a href="best-vps" class="nav-links">Best VPS</a>
                     </li>
                     <li>
-                        <a href="about.html" class="nav-links">About Us</a>
+                        <a href="about" class="nav-links">About Us</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="nav-links">Contact Us</a>
+                        <a href="contact" class="nav-links">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -60,28 +167,29 @@
         <div class="container">
             <div class="row col-xs-12" id="head-part-row">
                 <div class="col-sm-6">
-                    <h2>
+                    <h2 class="anim1">
                         Find web hosting <br> that is perfect for you
                     </h2>
-                    <p>Hundreds of hosting providers tested by our experts.</p>
-                    <button><a href="#">Show Best Web Hosts</a></button>
+                    <p class="anim1">Hundreds of hosting providers tested by our experts.</p>
+                    <button class="snip0076 anim1"><span><a href="#">Show Best Web Hosts</a></span><i
+                            class="ion-android-arrow-forward"></i></button>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img-fluid" src="./Images/New-Homepage/desktop-illustration.svg" alt="">
+                    <img class="img-fluid" id="mainImg" src="./Images/New-Homepage/desktop-illustration.svg" alt="">
                 </div>
             </div>
             <div class="row" id="brand">
                 <div class="col-sm-3">
-                    <a href="#"><img src="./Images/New-Homepage/Bluehost.svg" alt=""></a>
+                    <a href="#"><img id="mainImg" src="./Images/New-Homepage/Bluehost.svg" alt=""></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#"><img src="./Images/New-Homepage/Godaddy.svg" alt=""></a>
+                    <a href="#"><img id="mainImg" src="./Images/New-Homepage/Godaddy.svg" alt=""></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#"><img src="./Images/New-Homepage/Bluehost.svg" alt=""></a>
+                    <a href="#"><img id="mainImg" src="./Images/New-Homepage/Bluehost.svg" alt=""></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#"><img src="./Images/New-Homepage/Godaddy.svg" alt=""></a>
+                    <a href="#"><img id="mainImg" src="./Images/New-Homepage/Godaddy.svg" alt=""></a>
                 </div>
             </div>
 
@@ -91,7 +199,8 @@
     <div class="container" id="hosting-cards">
         <h2>Web Hosting Review 2020</h2>
         <div class="row" id="card-row">
-            <div class="col-sm-4 card">
+            <div class="col-sm-4 card" data-aos-duration="4000">
+                <!-- data-aos="fade-left" -->
                 <img src="./Images//New-Homepage/99rdp_logo.png" alt="" width="150px">
                 <h1>9.6/<sub>10</sub></h1>
                 <div class="row" id="stars-row">
@@ -115,7 +224,8 @@
                 <a href="#">Visit Site<i class="fa fa-chevron-right float-right"></i></a>
                 <!-- <a href="#" id="read-review">Read Review</a> -->
             </div>
-            <div class="col-sm-4 card" id="orange-card">
+            <div class="col-sm-4 card" id="orange-card" data-aos-duration="4000">
+                <!-- data-aos="fade-left"  -->
                 <img src="./Images/New-Homepage/EURDP.png" alt="" width="150px">
                 <h1>9.6/<sub>10</sub></h1>
                 <div class="row" id="stars-row">
@@ -139,7 +249,8 @@
                 <a href="#">Visit Site<i class="fa fa-chevron-right float-right"></i></a>
                 <!-- <a href="#" id="read-review">Read Review</a> -->
             </div>
-            <div class="col-sm-4 card">
+            <div class="col-sm-4 card" data-aos-duration="4000">
+                <!-- data-aos="fade-left" -->
                 <img src="./Images/New-Homepage/Amazing.png" alt="" width="150px">
                 <h1>9.6/<sub>10</sub></h1>
                 <div class="row" id="stars-row">
@@ -171,24 +282,25 @@
         <div class="container">
             <div class="row" id="blog-head-row">
                 <h2>Recommended reads</h2>
-                <a class="float-right" href="#"><span>View All</span></a>
+                <a class="float-right" href="blog.html"><span>View All</span></a>
             </div>
             <div class="row" id="blog-card-row">
-                <div class="col-sm-3">
-                    <a href="#"><img src="./Images/blog/1.png" alt=""></a>
-                    <h5><a href="#">Blog Number 1</a></h5>
+                <div class="col-sm-3" data-aos="zoom-in" data-aos-duration="4000">
+                    <a href="benefits-of-window-rdp"><img src="./Images/blog/two.jpeg" alt=""></a>
+                    <h5><a href="benefits-of-window-rdp">Benefits of Windows RDP</a></h5>
                 </div>
-                <div class="col-sm-3">
-                    <a href="#"><img src="./Images/blog/2.png" alt=""></a>
-                    <h5><a href="#">Blog Number 1</a></h5>
+                <div class="col-sm-3" data-aos="zoom-in" data-aos-duration="4000">
+                    <a href="one-click-demo-import"><img src="./Images/blog/one.jpeg" alt=""></a>
+                    <h5><a href="one-click-demo-import">Top 5 One Click Demo Import Wordpress Theme</a></h5>
                 </div>
-                <div class="col-sm-3">
-                    <a href="#"><img src="./Images/blog/3.png" alt=""></a>
-                    <h5><a href="#">Blog Number 1</a></h5>
+                <div class="col-sm-3" data-aos="zoom-in" data-aos-duration="4000">
+                    <a href="affordable-web-hosting"><img src="./Images/blog/Best Affordable Web Hosting Packages.png"
+                            alt=""></a>
+                    <h5><a href="affordable-web-hosting">Best Affordable Web Hosting Packages</a></h5>
                 </div>
-                <div class="col-sm-3">
-                    <img src="./Images/blog/4.png" alt="">
-                    <h5><a href="#">Blog Number 1</a></h5>
+                <div class="col-sm-3" data-aos="zoom-in" data-aos-duration="4000">
+                    <a href="shopify-over-woocommerce"><img src="./Images/blog/Why choose Shopify over woocommerce.png" alt=""></a>
+                    <h5><a href="shopify-over-woocommerce">Why choose Shopify over woocommerce</a></h5>
                 </div>
             </div>
         </div>
@@ -203,11 +315,11 @@
                     </label>
                     <div>
                         <input type="text" placeholder="Enter Your Email Address"><span>
-                            <button><a href="#">Subscribe</a></button>
+                            <a href="#">Subscribe</a>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <img src="./Images/New-Homepage/email.png" alt="" width="250px">
+                    <img src="./Images/New-Homepage/migrations-expanded.svg" alt="" width="250px">
                 </div>
             </div>
         </div>
@@ -226,6 +338,7 @@
                         <div class="col-sm-4">
                             <h4>Blog</h4>
                             <ul>
+                                <li><a href="blog.html">Our Blog</a></li>
                                 <li><a href="https://eurdp.com/hosting">Web Hosting</a></li>
                                 <li><a href="https://eurdp.com/windows-vps-rdp">Best VPS</a></li>
                                 <li><a href="https://99rdp.com/cheap-rdp/">Cheap RDP</a></li>
@@ -236,19 +349,19 @@
                         <div class="col-sm-4">
                             <h4>Reviews</h4>
                             <ul>
-                                <li><a href="best-vps.html">Windows VPS</a></li>
-                                <li><a href="rdp-vps-coupons.html">Best RDP</a></li>
-                                <li><a href="top-10-hosting.html">Wordpress Hosting</a></li>
+                                <li><a href="best-vps">Windows VPS</a></li>
+                                <li><a href="rdp-vps-coupons">Best RDP</a></li>
+                                <li><a href="top-10-hosting">Wordpress Hosting</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="sitemap.html">Sitemap</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                                <li><a href="contact">Contact</a></li>
+                                <li><a href="faq">FAQ</a></li>
+                                <li><a href="sitemap">Sitemap</a></li>
+                                <li><a href="privacy-policy">Privacy Policy</a></li>
+                                <li><a href="terms-of-use">Terms of Use</a></li>
                             </ul>
                         </div>
                     </div>
@@ -256,21 +369,129 @@
             </div>
         </div>
     </div>
+    <button id="slideup">Offers</button>
+    <div id="slide">
+        <div class="container">
+            <div class="row">
+                <div class="row slide_content">
+                    <div class="col-sm-6 slide_img">
+
+                    </div>
+                    <div class="col-sm-6 slide_text" id="slide_text">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p>Are You Looking for a Best Deal?</p>
+                            <br> Then contact us on skype. <br><br><i class="fa fa-skype" aria-hidden="true"></i>
+                            <p>Username: trueabhi31</p>
+                        
+                    </div>
+                    <!-- <div class="text">
+                        <p>Looking for a Best Deal Or Suggestion contact us on skype: </p>
+                    </div>
+                    <div class="logo">
+                        
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer section code ends here. -->
 
-    <!-- Bootstrap Script CND Links -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <a id="button"></a>
+
+    <script>
+        AOS.init({
+            delay: 200
+        });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+
+    <!-- GSAP Text and Image Animation CND Link -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="jquery.firstVisitPopup.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").mouseleave(function () {
+                $("#myModal").show();
+            });
+            $(".close").click(function () {
+                $("#myModal").hide();
+            })
+            // $('#exampleModal').firstVisitPopup({
+            //     cookieName: 'homepage',
+            //     showAgainSelector: '#show-message'
+            // });
+        });
     </script>
 
     <!-- My Custom Javascript File Link -->
+    <script>
+
+    </script>
+    <script type="text/javascript">
+        var rule = CSSRulePlugin.getRule(".anim1 span:after");
+
+        gsap.from(".anim1", {
+            opacity: 0,
+            duration: 0.5,
+            y: -50,
+            stagger: 0.2,
+            delay: 1
+        });
+        gsap.to(rule, {
+            cssRule: {
+                scaleY: 0
+            },
+            duration: 0.8
+        });
+        gsap.from("#mainImg", {
+            duration: 0.8,
+            x: 30,
+            opacity: 0,
+            delay: 1.6
+        });
+
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+
+        $("#slideup").click(function () {
+            $("#slide").slideToggle()("slow");
+        });
+    </script>
+
     <script src="./Js/script.js"></script>
+
 </body>
 
 </html>
