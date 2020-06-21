@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@900&display=swap"
         rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/coupon.css">
+    <link rel="stylesheet" href="./css/coupon.min.css">
     <style>
         .logo #logo-sticky {
             display: none;
@@ -123,12 +123,12 @@
             <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #13aa52;">RDP Coupons</h2>
             <div class="my_country">
 
-                <a class="w3-button act" onclick="openCity('one')"><img src="./Images/New-Homepage/Amazing.png"
-                        height="25px" alt=""></a>
-                <a class=" w3-button" onclick="openCity('two')"><img src="./Images/New-Homepage/99rdp_logo.png" alt=""
-                        height="25px"></a>
-                <a class=" w3-button" onclick="openCity('three')"><img src="./Images/New-Homepage/EURDP.png" alt=""
-                        height="25px"></a>
+                <a class="w3-button" onclick="openCity('one') "><img class="myImg act"
+                        src="./Images/New-Homepage/Amazing.png" height="25px" alt=""></a>
+                <a class=" w3-button" onclick="openCity('two')"><img class="myImg"
+                        src="./Images/New-Homepage/99rdp_logo.png" alt="" height="25px"></a>
+                <a class=" w3-button" onclick="openCity('three')"><img class="myImg"
+                        src="./Images/New-Homepage/EURDP.png" alt="" height="25px"></a>
             </div>
 
             <div id="one" class="city col s12">
@@ -352,11 +352,11 @@
         <div class="box">
             <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #13aa52;">Web Hosting Coupons</h2>
             <div class="my_country">
-                <a class=" w3-button" onclick="openstate('four')"><img
+                <a class=" w3-button" onclick="openstate('four')"><img class="act1"
                         src="./Images/web-hosting-coupon/a2hosting-line.png" height="25px" alt=""></a>
-                <a class=" w3-button" onclick="openstate('five')"><img src="./Images/web-hosting-coupon/godaddy.png"
+                <a class=" w3-button" onclick="openstate('five')"><img class="" src="./Images/web-hosting-coupon/godaddy.png"
                         alt="" height="25px"></a>
-                <a class=" w3-button" onclick="openstate('six')"><img src="./Images/web-hosting-coupon/hosting24.png"
+                <a class=" w3-button" onclick="openstate('six')"><img class="" src="./Images/web-hosting-coupon/hosting24.png"
                         alt="" height="25px"></a>
             </div>
 
@@ -581,11 +581,11 @@
             <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #13aa52;">Dedicated Servers Coupons
             </h2>
             <div class="my_country">
-                <a class=" w3-button" onclick="opencountry('seven')"><img
+                <a class=" w3-button" onclick="opencountry('seven')"><img class="act2"
                         src="./Images/web-hosting-coupon/a2hosting-line.png" height="25px" alt=""></a>
-                <a class=" w3-button" onclick="opencountry('eight')"><img src="./Images/web-hosting-coupon/godaddy.png"
+                <a class=" w3-button" onclick="opencountry('eight')"><img class="" src="./Images/web-hosting-coupon/godaddy.png"
                         alt="" height="25px"></a>
-                <a class=" w3-button" onclick="opencountry('nine')"><img src="./Images/web-hosting-coupon/hosting24.png"
+                <a class=" w3-button" onclick="opencountry('nine')"><img class="" src="./Images/web-hosting-coupon/hosting24.png"
                         alt="" height="25px"></a>
             </div>
 
@@ -970,11 +970,16 @@
         function openCity(cityName) {
             var i;
             var x = document.getElementsByClassName("city");
+
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
             document.getElementById(cityName).style.display = "block";
+
+
+
         };
+
 
         function openstate(stateName) {
             var i;
@@ -994,9 +999,27 @@
             document.getElementById(countryName).style.display = "block";
         }
     </script>
-    <script src="./Js/script.js"></script>
+
+
+
+    <script src="./Js/script.min.js"></script>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+            $('a img').click(function () {
+                $('img').removeClass("act");
+                $(this).addClass("act");
+            });
+            $('a img').click(function () {
+                $('img').removeClass("act1");
+                $(this).addClass("act1");
+            });
+            $('a img').click(function () {
+                $('img').removeClass("act2");
+                $(this).addClass("act2");
+            });
+        });
+
         var btn = $('#button');
 
         $(window).scroll(function () {

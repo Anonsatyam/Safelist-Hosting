@@ -619,3 +619,21 @@ body {
 .box{
     margin: 50px auto !important;
 }
+.act{
+    border: 2px solid #13aa52 !important;
+    padding: 5px !important;
+    border-radius: 25px;
+    height: 45px !important;
+}
+.act1{
+    border: 2px solid #13aa52 !important;
+    padding: 5px !important;
+    border-radius: 25px;
+    height: 45px !important;
+}
+.act2{
+    border: 2px solid #13aa52 !important;
+    padding: 5px !important;
+    border-radius: 25px;
+    height: 45px !important;
+}

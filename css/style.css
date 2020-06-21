@@ -865,7 +865,7 @@ button.snip0076.hover i {
     color: #fff;
     opacity: 1;
     animation: shadow-pulse 1s infinite;
-
+    border: none;
 }
 
 button#slideup {
@@ -900,20 +900,20 @@ button#slideup {
     display: flex;
     margin-left: auto !important;
     margin-right: auto !important;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     align-items: center;
     width: 775px;
 }
 
 .slide_img {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    /* border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; */
     height: 400px !important;
     width: 100%;
     background-position: center;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background: url("../Images/New-Homepage/special-offer-sale-promotion-banner-template_18622-562.jpg");
+    background: url("../Images/New-Homepage/special-offer-sale-promotion-banner-template_18622-562-min.jpg");
 }
 
 .shut {
